@@ -5,11 +5,11 @@ import './Add.css';
 const add = () => {
     return (
         <div>
-           <div className="container py-4">
+           <div className="container py-3">
                <h3 className="text-center mb-4">Write a Blog ..</h3>
                <div className="row">
                     <div className="col-md-6 mx-auto">
-                        <div className="card p-4">
+                        <div className="card p-5">
                             <div className="mb-3">
                                 <label className="form-label">Title</label>
                                 <input type="text" className="form-control" placeholder="Write a title ..." required />
@@ -21,7 +21,7 @@ const add = () => {
                             </div>
 
                             <div className="mb-4">
-                                <label className="form-label">Description</label>
+                                <label className="form-label">Those a Picture</label>
                                 <input className="form-control" type="file" id="formFile"/>
                             </div>
 
