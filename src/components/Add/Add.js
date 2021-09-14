@@ -6,18 +6,18 @@ class Add extends Component {
 
     state = {
         title: '',
-        content: ''
-        // image: ''
+        content: '',
+        image: ''
     }
 
     submitPostHandler = () => {
         const data  = {
             title: this.state.title,
-            body: this.state.content,
-            // image: this.state.image
+            content: this.state.content,
+            image: this.state.image
         }
 
-        axios.post('/posts', data)
+        axios.post('/posts.json', data)
         .then(response => {
             console.log(response);
         }).catch(err => {
@@ -45,11 +45,11 @@ class Add extends Component {
                                 value={this.state.content} onChange={(event) => this.setState({content: event.target.value})}/>
                             </div>
 
-                            {/* <div className="mb-4">
+                            <div className="mb-4">
                                 <label className="form-label">Those a Picture</label>
                                 <input className="form-control" type="file" id="formFile"
                                  value={this.state.image} onChange={(event) => this.setState({image: event.target.value})} />
-                            </div> */}
+                            </div>
 
                             <div>
                                 <button type="button" className="btn btn-info float-end text-white" onClick={this.submitPostHandler}>Submit</button>
