@@ -1,10 +1,9 @@
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
 
-import './App.css';
-
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 
+import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Blog from './components/Blog/Blog';
 import Add from './components/Add/Add';
