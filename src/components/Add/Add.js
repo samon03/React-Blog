@@ -4,17 +4,21 @@ import './Add.css';
 
 class Add extends Component {
 
+    key = Math.floor((Math.random() * 10000) + 1);
+
     state = {
         title: '',
         content: '',
-        image: ''
+        image: '',
+        id: this.key
     }
 
     submitPostHandler = () => {
         const data  = {
             title: this.state.title,
             content: this.state.content,
-            image: this.state.image
+            image: this.state.image,
+            id: this.state.id
         }
 
         axios.post('/posts.json', data)

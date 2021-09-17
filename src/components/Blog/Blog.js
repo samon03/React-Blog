@@ -32,7 +32,7 @@ class Blog extends Component {
 
     render () {
         const posts = this.state.posts.map(post => {
-            return <Card key="1" 
+            return <Card key={post.id} 
             title={post.title} 
             content={post.content}
             image={post.image}

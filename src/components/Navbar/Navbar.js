@@ -13,7 +13,10 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item">
-                            <Link className="nav-link mt-2" to="/add">Add Blog</Link>
+                                <Link className="nav-link mt-2" to="/">Home</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link mt-2" to="/add">Add Blog</Link>
                             </li>
                             <li className="nav-item">
                                 <span className="nav-link">
