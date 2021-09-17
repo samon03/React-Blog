@@ -1,7 +1,7 @@
-import axios from 'axios'
+import axios from 'axios';
 
 const instance = axios.create({
-    baseURL: ''
+    baseURL: 'https://react-blog-c7e11-default-rtdb.firebaseio.com/'
 });
 
 export default instance;
