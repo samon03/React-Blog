@@ -23,7 +23,6 @@ class Blog extends Component {
                 posts.push(val);
             })
 
-            console.log(posts);
             this.setState({posts: posts});
         })
         .catch(err => {
@@ -40,7 +39,6 @@ class Blog extends Component {
                 post.push(val);
             })
 
-            console.log(post);
             this.setState({post: post});
         })
         .catch(err => {
@@ -53,7 +51,7 @@ class Blog extends Component {
             return <Card key={post.id} 
             title={post.title} 
             content={post.content}
-            image={post.image}
+            image={post.image} 
             />
         });
 
@@ -63,7 +61,7 @@ class Blog extends Component {
             title={post.title} 
             content={post.content}
             image={post.image}
-            />
+            id={this.state.selectedId} />
         });
 
         return (
@@ -85,5 +83,6 @@ class Blog extends Component {
         );
     }
 }
+
 
 export default Blog;

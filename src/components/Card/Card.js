@@ -1,13 +1,13 @@
 import React from 'react';
-// import blog_pic from './../../assets/banner2.png';
+import blog_pic from './../../assets/banner2.png';
 
 const Card = (props) => {
     return (
 
-        <div className="card box mb-3">
+        <div className="card box mb-3" onClick={props.clicked}>
             <div className="row gy-4">
                 <div className="col-md-4 p-3 appear">
-                    <img src={props.image} className="img-fluid rounded-start" alt=""/>
+                    <img src={blog_pic} className="img-fluid rounded-start" alt=""/>
                 </div>
                 <div className="col-md-8 dis">
                     <div className="card-body">
